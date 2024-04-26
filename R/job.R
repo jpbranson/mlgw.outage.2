@@ -21,6 +21,9 @@ page <- read_html("https://outagemap.mlgw.org/OutageSummary.php")
 
 overall_outage <- page %>% html_elements(xpath = "//td//td//h2") %>% html_text()
 
+if(!dir.exists("data")) {
+  dir.create("data")
+}
 
 
 events <- page %>%
