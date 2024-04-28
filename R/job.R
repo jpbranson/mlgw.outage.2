@@ -12,7 +12,7 @@ library(ggplot2)
 library(stringr)
 library(geofacet)
 library(lubridate)
-#d
+
 
 timestamp <- Sys.time()
 datestamp <- timestamp %>% format("%Y-%m-%d_%H_%M_%S") %>% str_replace_all(":", "_") %>% str_replace_all(" ", "_")
